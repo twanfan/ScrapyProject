@@ -56,6 +56,6 @@ class MyImagesPipeline(ImagesPipeline):
         image_path = [x['path'] for ok, x in results if ok]
         if not image_path:
             raise DropItem('Item contains no images')
-        item['image_paths'] = image_path
+        item['ImgUrl'] = image_path
         return item
 
